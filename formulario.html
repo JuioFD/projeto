@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+
+    <h1>Cadastro - Teste de Formulario</h1>
+
+    <form>
+        <label for="clienteNome">Nome:</label> <br>
+        <input type="text" id="clienteNome" name="cadName" placeholder="Insira seu Nome">
+        <br><br>
+
+        <label for="emailCliente">E-mail:</label> <br>
+        <input type="email" id="emailCliente" name="cadEmail" placeholder="Insira seu e-mail">
+        <br><br>
+
+        <label>Senha:</label> <br>
+        <input type="password" name="cadSenha" placeholder="Insira sua senha">
+        <br><br>
+
+        <label>Data de Nascimento:</label><br>
+        <input type="date" name="cadNas" id="nascimento">
+        <br><br>
+
+        <label>Número de Telefone:</label><br>
+        <input type="number" name="cadTel" id="telefone" placeholder="Insira seu número de telefone">
+        <br><br>
+
+        <label> Gênero: </label><br>
+        <input type="radio" name="sexo" value="Feminino"> Feminino
+        <input type="radio" name="sexo" value="Masculino"> Masculino
+        <br><br>
+
+        <label>Como conheceu nosso site?</label><br>
+        <select name="referencia" id="ref">
+            <option>Selecione:</option>
+            <option>Anúncio</option>
+            <option>Amigos</option>
+            <option>Indicação</option>
+        </select>
+
+        <br><br>
+
+        <label> O que você procura em nosso site? </label> <br>
+        <input type="checkbox" name="preferencias"> Adidas <br>
+        <input type="checkbox" name="preferencias"> Basquete <br>
+        <input type="checkbox" name="preferencias"> Bermudas <br>
+        <input type="checkbox" name="preferencias"> Calçados <br>
+        <input type="checkbox" name="preferencias"> Camisas <br>
+        <input type="checkbox" name="preferencias"> Futebol <br>
+        <input type="checkbox" name="preferencias"> Nike <br>
+        <input type="checkbox" name="preferencias"> Suplementos <br>
+
+        <br><br>
+
+        <label> Feedbacks: </label> <br> <br>
+        <textarea name="msg" id="Feedbacks" rows="6" cols="50"></textarea>
+
+        <br><br>
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
