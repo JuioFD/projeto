@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Materiais Esportivos</title>
 </head>
+
 <body>
 
-    <h2>Roupas e Artigos Esportivos aqui! </h2>
-    <p> 
-        Encontre aqui a camisa do seu time do coração com o <strong> melhor preço! </strong> 
-    </p> 
-        
-    <a href="contato.html">Fale Conosco</a>
-    <a href="sobre.html">Sobre nós</a>
+    <h2 id="tituloPrincipal"> Roupas e Artigos Esportivos aqui! ⚽ </h2>
 
-    
+    <input class="busca" type="text" name="procura" placeholder="o que você procura?">
+    <button class="btnbuscar" title="Clique aqui para buscar"> Buscar </button>
+
+    <p class=destaques>
+        Encontre aqui a camisa do seu time do coração com o <strong> melhor preço! </strong>
+    </p>
+
+    <p hidden> Promoção para camisas do Flamengo! </p>
+
+    <nav>
+
+        <details>
+            <summary>
+                <strong>Categorias</strong>
+            </summary>
+
+            <a href="Categoria/camisas.html">Camisas</a> <br>
+            <a href="Categoria/bermudas.html">Bermudas</a> <br>
+            <a href="Categoria/calcados.html">Calçados</a> <br>
+            <a href="Categoria/futebol.html">Futebol</a> <br>
+            <a href="Categoria/basquete.html">Basquete</a> <br>
+            <a href="Categoria/nike.html">Nike</a> <br>
+            <a href="Categoria/adidas.html">Adidas</a> <br>
+            <a href="Categoria/suplementos.html">Suplementos</a> <br>
+        </details> <br>
+
+        <a href="contato.html">Fale Conosco</a> <br>
+        <a href="sobre.html">Sobre nós</a> <br><br><br>
+
+    </nav>
+
+    <p> Camisa do Flamengo 2026</p>
+
+    <button data-id="1" data-nome="flamengo12026" data-preco="399">
+        Comprar
+    </button>
+
+    <p> Bermuda Nike </p>
+
+    <button data-id="2" data-nome="nikeb1" data-preco="229">
+        Comprar
+    </button>
+
+    <p> Tênis Adidas </p>
+
+    <button data-id="3" data-nome="adidast1" data-preco="199">
+        Comprar
+     </button>
+
+     <br><br><br><br><br>
+
+<h3> Tabela </h3>
+
+<table border="1">
+
+     <thead>
+            <tr>
+        <th> Produto </th>
+        <th> Marca/Ano </th>
+        <th> Preços </th>
+        <th> Frete </th>
+     </tr>
+
+     </thead>
+
+     <tbody>
+        <tr>
+            <td rowspan="1">Camisa do Flamengo</td>
+            <td> 2026 </td>
+            <td> R$399,99 </td>
+            <td> Grátis </td>
+        </tr>
+
+        <tr>
+            <td> Bermuda</td>
+            <td> Nike </td>
+            <td> R$229,99</td>
+            <td> Grátis </td>
+        </tr>
+
+        <tr>
+            <td> Tênis Adidas </td>
+            <td> Adidas</td>
+            <td> R$149,99 </td>
+            <td> Grátis </td>
+        </tr>
+
+        <tr>
+            <td> Whey </td>
+            <td> Growth </td>
+            <td> R$99,99 </td>
+            <td> Grátis </td>
+        </tr>
+
+        <tr>
+            <td> Bola de Basquete </td>
+            <td> NBA </td>
+            <td> R$69,21</td>
+            <td>  Grátis  </td>
+        </tr>
+
+     </tbody>
+
+     <tfoot>
+        <tr>
+            <td colspan="4"> Produtos = 5 </td>
+        </tr>
+     </tfoot>
+
+     </table>
 </body>
+
 </html>
