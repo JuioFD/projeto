@@ -13,31 +13,47 @@
 
     <form>
         <label for="clienteNome">Nome:</label> <br>
-        <input type="text" id="clienteNome" name="cadName" placeholder="Insira seu Nome">
+        <input type="text" id="clienteNome" name="cadName" placeholder="Insira seu Nome" required
+        oninvalid="this.setCustomValidity('Insira um nome válido')"
+        oninput="this.setCustomValidity('')">
         <br><br>
 
         <label for="emailCliente">E-mail:</label> <br>
-        <input type="email" id="emailCliente" name="cadEmail" placeholder="Insira seu e-mail">
+        <input type="email" id="emailCliente" name="cadEmail" placeholder="Insira seu e-mail" required
+        oninvalid="this.setCustomValidity('Insira um e-mail válido')"
+        oninput="this.setCustomValidity('')">
         <br><br>
 
         <label>Senha:</label> <br>
-        <input type="password" name="cadSenha" placeholder="Insira sua senha">
+        <input type="password" name="cadSenha" placeholder="Insira sua senha" required minlength="8"
+        oninvalid="this.setCustomValidity('Sua senha precisa ter pelo menos 8 caracteres')"
+        oninput="this.setCustomValidity('')">
         <br><br>
 
-        <label>Data de Nascimento:</label><br>
-        <input type="date" name="cadNas" id="nascimento">
+        <label> Idade: </label><br>
+        <input type="number" name="cadNas" id="nascimento" min="18" max="100" placeholder="Idade" required
+        oninvalid="this.setCustomValidity('Você precisa ter no minimo 18 anos para se cadastrar')"
+        oninput="this.setCustomValidity('')">
         <br><br>
 
+        <label> CEP: </label> <br>
+        <input type="text" name="cepCad" id="cep" placeholder="Insira seu CEP" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" required
+        oninvalid="this.setCustomValidity('Insira seu CEP corretamente')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+        
         <label>Número de Telefone:</label><br>
-        <input type="number" name="cadTel" id="telefone" placeholder="Insira seu número de telefone">
+        <input type="number" name="cadTel" id="telefone" placeholder="Insira seu número de telefone" required
+        oninvalid="this.setCustomValidity('Insira seu número de telefone')"
+        oninput="this.setCustomValidity('')">
         <br><br>
 
         <label> Gênero: </label><br>
-        <input type="radio" name="sexo" value="Feminino"> Feminino
-        <input type="radio" name="sexo" value="Masculino"> Masculino
+        <input type="radio" name="sexo" value="Feminino" required> Feminino
+        <input type="radio" name="sexo" value="Masculino" required> Masculino
         <br><br>
 
-        <label>Como conheceu nosso site?</label><br>
+        <label>Como conheceu nosso site? (opcional) </label><br>
         <select name="referencia" id="ref">
             <option>Selecione:</option>
             <option>Anúncio</option>
@@ -47,7 +63,7 @@
 
         <br><br>
 
-        <label> O que você procura em nosso site? </label> <br>
+        <label> O que você procura em nosso site? (opcional) </label> <br>
         <input type="checkbox" name="preferencias"> Adidas <br>
         <input type="checkbox" name="preferencias"> Basquete <br>
         <input type="checkbox" name="preferencias"> Bermudas <br>
@@ -59,7 +75,7 @@
 
         <br><br>
 
-        <label> Feedbacks: </label> <br> <br>
+        <label> Feedbacks: (opcional) </label> <br> <br>
         <textarea name="msg" id="Feedbacks" rows="6" cols="50"></textarea>
 
         <br><br>
@@ -68,6 +84,10 @@
         <input type="submit" value="Enviar">
 
     </form>
+
+    <a href="index.html"> Volte à página inicial </a> 
+
+    <footer> Teste Footer </footer>
 
 </body>
 
